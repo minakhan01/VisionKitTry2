@@ -26,7 +26,7 @@ _NUM_ANCHORS = len(ANCHORS)
 _MACHINE_EPS = sys.float_info.epsilon
 
 # update # 2
-_NUM_OF_LABELS = 80 
+_NUM_OF_LABELS = 20 
 
 # update # 3: replace 4 in logit (linee 75 and 84) with _NUM_OF_LABELS
 
