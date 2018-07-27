@@ -32,16 +32,48 @@ _NUM_OF_LABELS = 20
 
 class Object(object):
     """Object detection result."""
-    BACKGROUND = 0
-    PERSON = 1
-    CAT = 2
-    DOG = 3
+    AEROPLANE = 0
+    BICYCLE = 1
+    BIRD = 2
+    BOAT = 3
+    BOTTLE = 4
+    BUS = 5
+    CAR = 6
+    CAT = 7
+    CHAIR = 8
+    COW = 9
+    DININGTABLE = 10
+    DOG = 11
+    HORSE = 12
+    MOTORBIKE = 13
+    PERSON = 14
+    POTTEDPLANT = 15
+    SHEEP = 16
+    SOFA = 17
+    TRAIN = 18
+    TVMONITOR = 19
 
     _LABELS = {
-        BACKGROUND: 'BACKGROUND',
-        PERSON: 'PERSON',
-        CAT: 'CAT',
-        DOG: 'DOG',
+        AEROPLANE = 'AEROPLANE',
+        BICYCLE = 'BICYCLE',
+        BIRD = 'BIRD',
+        BOAT = 'BOAT',
+        BOTTLE = 'BOTTLE',
+        BUS = 'BUS',
+        CAR = 'CAR',
+        CAT = 'CAT',
+        CHAIR = 'CHAIR',
+        COW = 'COW',
+        DININGTABLE = 'DINING TABLE',
+        DOG = 'DOG',
+        HORSE = 'HORSE',
+        MOTORBIKE = 'MOTORBIKE',
+        PERSON = 'PERSON',
+        POTTEDPLANT = 'POTTEDPLANT',
+        SHEEP = 'SHEEP',
+        SOFA = 'SOFA',
+        TRAIN = 'TRAIN',
+        TVMONITOR = 'TVMONITOR',
     }
 
     def __init__(self, bounding_box, kind, score):
