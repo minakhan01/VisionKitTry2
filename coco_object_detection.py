@@ -21,7 +21,7 @@ from aiy.vision.models.object_detection_anchors import ANCHORS
 
 # update # 1
 # _COMPUTE_GRAPH_NAME = 'mobilenet_ssd_256res_0.125_person_cat_dog.binaryproto'
-_COMPUTE_GRAPH_NAME = 'coco_object_detection.binaryproto'
+_COMPUTE_GRAPH_NAME = 'voc_object_detection.binaryproto'
 _NUM_ANCHORS = len(ANCHORS)
 _MACHINE_EPS = sys.float_info.epsilon
 
