@@ -107,8 +107,10 @@ def _decode_detection_result(logit_scores, box_encodings, anchors,
     Returns:
       A list of ObjectDetection.Result.
     """
+    print(len(logit_scores))
+    print(_NUM_ANCHORS)
     assert len(box_encodings) == 4 * _NUM_ANCHORS
-    assert len(logit_scores) == _NUM_OF_LABELS * _NUM_ANCHORS
+    assert len(logit_scores) == (_NUM_OF_LABELS + 1) * _NUM_ANCHORS
 
     x0, y0 = offset
     width, height = image_size
