@@ -20,7 +20,7 @@ from aiy.vision.models import utils
 from aiy.vision.models.object_detection_anchors import ANCHORS
 
 # update # 1
-# _COMPUTE_GRAPH_NAME = 'mobilenet_ssd_256res_0.125_person_cat_dog.binaryproto'
+#_COMPUTE_GRAPH_NAME = 'mobilenet_ssd_256res_0.125_person_cat_dog.binaryproto'
 _COMPUTE_GRAPH_NAME = 'voc_object_detection.binaryproto'
 _NUM_ANCHORS = len(ANCHORS)
 _MACHINE_EPS = sys.float_info.epsilon
@@ -54,26 +54,26 @@ class Object(object):
     TVMONITOR = 19
 
     _LABELS = {
-        AEROPLANE = 'AEROPLANE',
-        BICYCLE = 'BICYCLE',
-        BIRD = 'BIRD',
-        BOAT = 'BOAT',
-        BOTTLE = 'BOTTLE',
-        BUS = 'BUS',
-        CAR = 'CAR',
-        CAT = 'CAT',
-        CHAIR = 'CHAIR',
-        COW = 'COW',
-        DININGTABLE = 'DINING TABLE',
-        DOG = 'DOG',
-        HORSE = 'HORSE',
-        MOTORBIKE = 'MOTORBIKE',
-        PERSON = 'PERSON',
-        POTTEDPLANT = 'POTTEDPLANT',
-        SHEEP = 'SHEEP',
-        SOFA = 'SOFA',
-        TRAIN = 'TRAIN',
-        TVMONITOR = 'TVMONITOR',
+        AEROPLANE: 'AEROPLANE',
+        BICYCLE: 'BICYCLE',
+        BIRD: 'BIRD',
+        BOAT: 'BOAT',
+        BOTTLE: 'BOTTLE',
+        BUS: 'BUS',
+        CAR: 'CAR',
+        CAT: 'CAT',
+        CHAIR: 'CHAIR',
+        COW: 'COW',
+        DININGTABLE: 'DINING TABLE',
+        DOG: 'DOG',
+        HORSE: 'HORSE',
+        MOTORBIKE: 'MOTORBIKE',
+        PERSON: 'PERSON',
+        POTTEDPLANT: 'POTTEDPLANT',
+        SHEEP: 'SHEEP',
+        SOFA: 'SOFA',
+        TRAIN: 'TRAIN',
+        TVMONITOR: 'TVMONITOR',
     }
 
     def __init__(self, bounding_box, kind, score):
