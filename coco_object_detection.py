@@ -26,34 +26,36 @@ _NUM_ANCHORS = len(ANCHORS)
 _MACHINE_EPS = sys.float_info.epsilon
 
 # update # 2
-_NUM_OF_LABELS = 20 
+_NUM_OF_LABELS = 21 
 
 # update # 3: replace 4 in logit (linee 75 and 84) with _NUM_OF_LABELS
 
 class Object(object):
     """Object detection result."""
-    AEROPLANE = 0
-    BICYCLE = 1
-    BIRD = 2
-    BOAT = 3
-    BOTTLE = 4
-    BUS = 5
-    CAR = 6
-    CAT = 7
-    CHAIR = 8
-    COW = 9
-    DININGTABLE = 10
-    DOG = 11
-    HORSE = 12
-    MOTORBIKE = 13
-    PERSON = 14
-    POTTEDPLANT = 15
-    SHEEP = 16
-    SOFA = 17
-    TRAIN = 18
-    TVMONITOR = 19
+    BACKGROUND = 0
+    AEROPLANE = 1
+    BICYCLE = 2
+    BIRD = 3
+    BOAT = 4
+    BOTTLE = 5
+    BUS = 6
+    CAR = 7
+    CAT = 8
+    CHAIR = 9
+    COW = 10
+    DININGTABLE = 11
+    DOG = 12
+    HORSE = 13
+    MOTORBIKE = 14
+    PERSON = 15
+    POTTEDPLANT = 16
+    SHEEP = 17
+    SOFA = 18
+    TRAIN = 19
+    TVMONITOR = 20
 
     _LABELS = {
+        BACKGROUND: 'BACKGROUND',
         AEROPLANE: 'AEROPLANE',
         BICYCLE: 'BICYCLE',
         BIRD: 'BIRD',
